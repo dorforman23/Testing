@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "74438182506",
+    "firebase_url": "https://hd-wallpapers-8412b.firebaseio.com",
+    "project_id": "hd-wallpapers-8412b",
+    "storage_bucket": "hd-wallpapers-8412b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74438182506:android:feabd9a210f6ded12cac13",
+        "android_client_info": {
+          "package_name": "com.furmandevs.myapplicationn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74438182506-r6107o643dbji83f2feai1tl9ub26nan.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.furmandevs.myapplicationn",
+            "certificate_hash": "8a506bc569d7fe13155d9a607e1960ca4d4f5dfc"
+          }
+        },
+        {
+          "client_id": "74438182506-gb5okdqsg3gs38v15md5vrua981709sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArJarvgAO3XuLBf2-9heMe3c90p-cm5Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74438182506-gb5okdqsg3gs38v15md5vrua981709sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

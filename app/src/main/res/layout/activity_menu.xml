@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:id="@+id/logoRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#1B1B1B">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/logoRelative"
+        android:background="#989898" />
+
+    <fragment
+        android:name="com.furmandevs.myapplicationn.TestFragment"
+        android:id="@+id/slideshowFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeBar"
+        android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slideshowFragment"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            app:tabIndicatorColor="#CCCCCC"
+            app:tabTextColor="#ffffff">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/menuItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Categories" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/PremiumItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Premium" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>
